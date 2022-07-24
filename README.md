@@ -100,6 +100,8 @@ install.packages("magrittr")
 library(magrittr)
 library(ggplot2)
 library(dplyr)
+
+#plotting total no. of rides of year
 whole_data %>% 
   group_by ( member_casual) %>% 
   summarise ( total_no_of_rides = n()) %>% 
